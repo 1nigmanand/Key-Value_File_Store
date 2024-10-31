@@ -46,3 +46,35 @@ A simple and interactive key-value store application built using Node.js. It all
    npm install
    ```      
 
+### Usage
+1. **Run the application**
+   ```bash  
+   node index.js
+   ```    
+2. **Follow the interactive menu to perform operations like creating, reading, deleting, or batch-creating key-value pairs.**
+
+
+### Example Usage
+
+#### Create a Key-Value Pair
+- Select option `1` in the interactive console and provide:
+  - **Key**: A string with a maximum length of 32 characters.
+  - **Value**: A JSON object, limited to a size of 16KB.
+  - **TTL (Time-To-Live)**: Optional, specify in seconds. Leave blank for no expiration.
+
+#### Read a Key-Value Pair
+- Select option `2` in the console and enter the **key** to retrieve its value and status (active or expired).
+
+#### Delete a Key-Value Pair
+- Select option `3` and enter the **key** you want to delete from the storage.
+
+
+#### Batch Create Key-Value Pairs
+- Select option `4` and enter multiple key-value pairs in JSON format. 
+- Example input for batch creation:
+  ```json
+  [
+    { "key": "user1", "value": { "name": "Alice" }, "ttl": 60 },
+    { "key": "user2", "value": { "name": "Bob" }, "ttl": 120 }
+  ]
+  ```
