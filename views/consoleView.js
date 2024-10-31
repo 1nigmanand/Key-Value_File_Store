@@ -27,7 +27,7 @@ function handleMenuOption(option) {
         case '1':
             console.log("Note: The key must be a string (max 32 characters) and the value a JSON object (max 16KB).");
             rl.question('Enter key: ', (key) => {
-                rl.question('Enter value (JSON format): ', (value) => {
+                rl.question('Enter value (JSON format) (e.g., {"key": "value"}): ', (value) => {
                     rl.question('Enter TTL in seconds (or press enter for no TTL): ', (ttl) => {
                         const ttlValue = ttl ? parseInt(ttl) : null;
                         try {
