@@ -38,4 +38,11 @@ A simple and interactive key-value store application built using Node.js. It all
 1. **Clone the repository**
    ```bash
    git clone <repository-url>
-   cd key-value-store
+   cd Key-Value_File_Store
+    ```
+
+2. **Install dependencies**
+   ```bash  
+   npm install
+   ```      
+
