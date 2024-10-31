@@ -78,3 +78,28 @@ A simple and interactive key-value store application built using Node.js. It all
     { "key": "user2", "value": { "name": "Bob" }, "ttl": 120 }
   ]
   ```
+
+### Configuration
+
+- **TTL (Time-to-Live)**: When creating a key, you can set a TTL (in seconds) to define its lifespan. Once the TTL expires, the key is automatically marked as expired and will be removed during the next cleanup cycle.
+- **Automatic Cleanup**: The application runs a cleanup process every minute to remove expired keys from storage, ensuring efficient memory management.
+
+### File Storage
+
+Data is stored in `.data/dataStore.json`, which maintains persistence across application restarts. The necessary directories and files will be created automatically if they don’t already exist.
+
+## Troubleshooting
+
+- **Invalid Key Format**: Ensure keys are strings and contain no more than 32 characters.
+- **Value Size Limit**: Values should not exceed 16KB to fit within the allowed limit.
+- **JSON Format**: When using batch operations, ensure all input is correctly formatted as JSON objects.
+
+## Dependencies
+
+This application uses:
+- [chalk](https://www.npmjs.com/package/chalk) for colored output in the console.
+
+Install dependencies with:
+```bash
+npm install
+```
