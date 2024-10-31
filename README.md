@@ -1,6 +1,6 @@
 # Key-Value Store Application
 
-A simple and interactive key-value store application built using Node.js. It allows users to create, read, delete, and batch-create key-value pairs, with an option to set time-to-live (TTL) for each key.
+An interactive key-value store application built using Node.js, designed with a focus on simplicity and data persistence. The app allows users to create, read, delete, and batch-create key-value pairs with an optional time-to-live (TTL) feature. This project is organized using a basic MVC (Model-View-Controller) structure for efficient code management and scalability.
 
 ## Features
 
@@ -49,7 +49,7 @@ A simple and interactive key-value store application built using Node.js. It all
 ### Usage
 1. **Run the application**
    ```bash  
-   node index.js
+   node app.js
    ```    
 2. **Follow the interactive menu to perform operations like creating, reading, deleting, or batch-creating key-value pairs.**
 
