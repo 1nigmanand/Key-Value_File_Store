@@ -99,7 +99,3 @@ Data is stored in `.data/dataStore.json`, which maintains persistence across app
 This application uses:
 - [chalk](https://www.npmjs.com/package/chalk) for colored output in the console.
 
-Install dependencies with:
-```bash
-npm install
-```
