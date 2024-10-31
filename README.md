@@ -24,7 +24,7 @@ A simple and interactive key-value store application built using Node.js. It all
 ├── README.md                   # Project documentation
 ├── package.json                # Project metadata and dependencies
 └── index.js                    # Entry point for the application
-
+```
 
 ## Getting Started
 
